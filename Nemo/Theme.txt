@@ -1,0 +1,5 @@
+echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
+
+echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
+
+qt5-style-kvantum qt5-style-kvantum-l10n qt5-style-kvantum-themes
