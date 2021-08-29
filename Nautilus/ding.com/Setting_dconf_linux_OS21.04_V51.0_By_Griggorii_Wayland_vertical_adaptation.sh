@@ -16448,6 +16448,44 @@ chmod -R a+rw ~/.local/share/gnome-shell/extensions
 EOF
 sudo chmod -R a+rw ~/.local/share/gnome-shell/extensions
 EOF
+sudo service org.freedesktop.Tracker1.Miner.Extract.service stop
+
+sudo systemctl disable org.freedesktop.Tracker1.Miner.Extract.service
+
+sudo service org.freedesktop.Tracker1.Miner.Files.service stop
+
+sudo systemctl disable org.freedesktop.Tracker1.Miner.Files.service
+
+sudo service org.freedesktop.Tracker1.service stop
+
+sudo systemctl disable org.freedesktop.Tracker1.service
+
+sudo service org.freedesktop.Tracker1.Writeback.service stop
+
+sudo systemctl disable org.freedesktop.Tracker1.Writeback.service
+
+sudo service org.gnome.evolution.dataserver.AddressBook.service stop
+
+sudo systemctl disable org.gnome.evolution.dataserver.AddressBook.service
+
+sudo service org.gnome.evolution.dataserver.Calendar.service stop
+
+sudo systemctl disable org.gnome.evolution.dataserver.Calendar.service
+
+sudo service org.gnome.evolution.dataserver.Sources.service stop
+
+sudo systemctl disable org.gnome.evolution.dataserver.Sources.service
+
+sudo service org.gnome.evolution.dataserver.UserPrompter.service stop
+
+sudo systemctl disable org.gnome.evolution.dataserver.UserPrompter.service
+
+systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
+
+systemctl --user mask org.gnome.evolution.dataserver.AddressBook.service org.gnome.evolution.dataserver.Calendar.service org.gnome.evolution.dataserver.Sources.service org.gnome.evolution.dataserver.UserPrompter.service
+
+systemctl --user mask org.freedesktop.Tracker1.Miner.Extract.service org.freedesktop.Tracker1.Miner.Files.service org.freedesktop.Tracker1.service org.freedesktop.Tracker1.Writeback.service
+EOF
 cd -
 EOF
 gsettings-data-convert ibus totem opensubtitles pythonconsole wm-schemas libgnomekbd pulseaudio mousetweaks mutter-schemas nm-applet org.gnome.Vinagre gvfs-dns-sd gnome-shell-overrides evolution-data-server folks update-manager org.gnome.crypto.pgp eog org.gnome.crypto.pgp_keyservers gnome-screenshot gnome-session gnome-settings-daemon gsettings-desktop-schemas org.gnome.crypto.cache gvfs-smb evince
