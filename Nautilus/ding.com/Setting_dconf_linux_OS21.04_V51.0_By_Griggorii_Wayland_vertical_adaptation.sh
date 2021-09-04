@@ -15529,6 +15529,24 @@ sudo sh -c "/usr/bin/echo performance > /sys/module/pcie_aspm/parameters/policy"
 EOF
 sudo sh -c "/usr/bin/echo performance /sys/devices/system/cpu/cpufreq/policy*/scaling_governor"
 EOF
+sudo sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_RP1_freq_mhz"
+EOF
+sudo sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_RPn_freq_mhz"
+EOF
+sudo sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_act_freq_mhz"
+EOF
+sudo sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_cur_freq_mhz"
+EOF
+sudo sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_min_freq_mhz"
+EOF
+sudo sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_RP0_freq_mhz"
+EOF
+sudo sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_boost_freq_mhz"
+EOF
+sudo sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_max_freq_mhz"
+EOF
+sudo sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_RP1_freq_mhz"
+EOF
 cd ~/
 EOF
 mkdir deamon_pulse_backup_freeze_test
