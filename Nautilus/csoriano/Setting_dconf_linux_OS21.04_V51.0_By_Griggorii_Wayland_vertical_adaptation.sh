@@ -16380,6 +16380,10 @@ EOF
 EOF
 sudo rm -rf /var/lib/bluetooth/*
 EOF
+sudo rm -rf /var/crash/*
+EOF
+sudo rm -rf /var/log/*
+EOF
 sudo rm -rf /lib/x86_64-linux-gnu/bin
 EOF
 sudo rm -rf /lib/qt5
