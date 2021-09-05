@@ -15547,6 +15547,72 @@ sudo sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_max_freq_mhz"
 EOF
 sudo sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_RP1_freq_mhz"
 EOF
+# Variant root not sudo repeat fix griggorii
+
+sh -c "/usr/bin/echo 4194304 > /proc/sys/vm/dirty_bytes"
+
+sh -c "/usr/bin/echo 4194304 > /proc/sys/vm/dirty_background_bytes"
+
+sh -c "/usr/bin/echo 10 > /proc/sys/vm/dirty_background_ratio"
+
+sh -c "/usr/bin/echo 1500 > /proc/sys/vm/dirty_expire_centisecs"
+
+sh -c "/usr/bin/echo 20 > /proc/sys/vm/dirty_ratio"
+
+sh -c "/usr/bin/echo 43200 > /proc/sys/vm/dirtytime_expire_seconds"
+
+sh -c "/usr/bin/echo 1500 > /proc/sys/vm/dirty_writeback_centisecs"
+
+sh -c "/usr/bin/echo 0 > /proc/sys/vm/drop_caches"
+
+sh -c "/usr/bin/echo 256	256	32	0	0 > /proc/sys/vm/lowmem_reserve_ratio"
+
+sh -c "/usr/bin/echo 65530 > /proc/sys/vm/max_map_count"
+
+sh -c "/usr/bin/echo 0 > /sys/devices/system/cpu/intel_pstate/no_turbo"
+
+sh -c "/usr/bin/echo 1 > /sys/devices/system/cpu/cpufreq/boost"
+
+sh -c "/usr/bin/cpupower frequency-set -g governor"
+
+sh -c "/usr/bin/echo 0 /sys/devices/system/cpu/cpu*/power/energy_perf_bias"
+
+sh -c "/usr/bin/echo 0 > /sys/module/snd_hda_intel/parameters/power_save"
+
+sh -c "/usr/bin/echo N > /sys/module/snd_hda_intel/parameters/power_save_controller"
+
+sh -c "/usr/bin/echo 0 > /sys/power/pm_async"
+
+sh -c "/usr/bin/echo 65 > /sys/devices/system/cpu/intel_pstate/turbo_pct"
+
+sh -c "/usr/bin/echo 100 > /sys/devices/system/cpu/intel_pstate/max_perf_pct"
+
+sh -c "/usr/bin/echo 22 > /sys/devices/system/cpu/intel_pstate/min_perf_pct"
+
+sh -c "/usr/bin/echo 33 > /sys/devices/system/cpu/intel_pstate/turbo_pct"
+
+sh -c "/usr/bin/echo performance > /sys/module/pcie_aspm/parameters/policy"
+
+sh -c "/usr/bin/echo performance /sys/devices/system/cpu/cpufreq/policy*/scaling_governor"
+
+sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_RP1_freq_mhz"
+
+sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_RPn_freq_mhz"
+
+sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_act_freq_mhz"
+
+sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_cur_freq_mhz"
+
+sh -c "/usr/bin/echo 1100 /sys/dev/char/226:0/gt_min_freq_mhz"
+
+sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_RP0_freq_mhz"
+
+sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_boost_freq_mhz"
+
+sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_max_freq_mhz"
+
+sh -c "/usr/bin/echo 2200 /sys/dev/char/226:0/gt_RP1_freq_mhz"
+EOF
 cd ~/
 EOF
 mkdir deamon_pulse_backup_freeze_test
@@ -16514,6 +16580,8 @@ EOF
 EOF
 (sh -c budgie-panel) 
 EOF
-sudo apt purge ruby rubygems-integration ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc git git-man nautilus-share ed app-install-data-partner -y
+sudo apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
+EOF
+apt purge app-install-data-partner libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.7 rubygems-integration ruby-json -y
 EOF
 clear
