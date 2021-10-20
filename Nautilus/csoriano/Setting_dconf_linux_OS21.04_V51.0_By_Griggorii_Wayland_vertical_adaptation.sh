@@ -12336,6 +12336,7 @@ logfiles=['/var/log/Xorg.0.log']
 width=668
 
 [org/gnome/gnome-system-monitor]
+cpu-colors=[(uint32 0, 'rgb(16,74,21)'), (1, 'rgb(54,192,56)'), (2, 'rgb(89,209,50)'), (3, 'rgb(5,255,14)'), (4, '#3cb44b'), (5, '#42d4f4'), (6, '#4363d8'), (7, '#911eb4'), (8, '#f032e6'), (9, '#fabebe'), (10, '#ffd8b1'), (11, '#fffac8'), (12, '#aaffc3'), (13, '#469990'), (14, '#000075'), (15, '#e6beff')]
 cpu-smooth-graph=true
 cpu-stacked-area-chart=true
 current-tab='resources'
@@ -12345,8 +12346,8 @@ graph-update-interval=1000
 kill-dialog=true
 logarithmic-scale=true
 maximized=false
-mem-color='#AB1852'
-net-in-color='#2D7DB3'
+mem-color='rgb(255,0,0)'
+net-in-color='rgb(0,93,104)'
 net-out-color='#EE1D00'
 network-in-bits=true
 network-total-in-bits=true
@@ -12358,9 +12359,9 @@ show-dependencies=false
 show-whose-processes='user'
 smooth-refresh=true
 solaris-mode=true
-swap-color='#49A835'
+swap-color='rgb(0,255,31)'
 update-interval=5000
-window-state=(851, 512, 34, 28)
+window-state=(844, 510, 34, 28)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
