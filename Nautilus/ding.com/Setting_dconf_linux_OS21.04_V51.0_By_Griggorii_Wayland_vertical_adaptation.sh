@@ -60,9 +60,10 @@ echo '    PS1="$red\u$nc@$red\H$nc:$CYAN\w$nc\n$red#$nc"' >> ~/.bashrc
 
 echo "else" >> ~/.bashrc
 
-echo '    PS1="$PURPLE\u$CYAN📎$COLOR_LIGHTBLUE\H$COLOR_DARKGRAY:$COLOR_GREEN\w$COLOR_GREEN\n$red\$$COLOR_LIGHTCYAN"' >> ~/.bashrc
+echo '    PS1="$PURPLE\u$nc@$CYAN\H$nc:$GREEN\w$nc\n$red\$$nc"' >> ~/.bashrc
 
 echo "fi" >> ~/.bashrc
+EOF
 EOF
 echo -e "\n                 40m     41m     42m     43m\
      44m     45m     46m     47m";
