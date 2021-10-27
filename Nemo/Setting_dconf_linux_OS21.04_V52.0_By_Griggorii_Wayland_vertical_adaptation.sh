@@ -4797,6 +4797,9 @@ window-properties=[618, 373, 640, 232]
 [org/blueman/network]
 nap-enable=false
 
+[org/blueman/plugins/recentconns]
+recent-connections='eNprYPJmiC1kaCtk1AMAEQ4Cwg=='
+
 [org/blueman/plugins/powermanager]
 auto-power-on=@mb false
 
@@ -4883,13 +4886,13 @@ togglekeys-sound-off='/usr/share/cinnamon/sounds/togglekeys-sound-off.ogg'
 togglekeys-sound-on='/usr/share/cinnamon/sounds/togglekeys-sound-on.ogg'
 
 [org/cinnamon/desktop/a11y/magnifier]
-brightness-blue=0.0
-brightness-green=0.0
-brightness-red=0.0
+brightness-blue=1.0
+brightness-green=1.0
+brightness-red=1.0
 color-saturation=1.0
-contrast-blue=0.0
-contrast-green=0.0
-contrast-red=0.0
+contrast-blue=1.0
+contrast-green=1.0
+contrast-red=1.0
 cross-hairs-clip=false
 cross-hairs-color='#ff0000'
 cross-hairs-length=4096
@@ -6117,14 +6120,14 @@ timeout-enable=false
 togglekeys-enable=true
 
 [org/gnome/desktop/a11y/magnifier]
-brightness-blue=0.0
-brightness-green=0.0
-brightness-red=0.0
+brightness-blue=1.0
+brightness-green=1.0
+brightness-red=1.0
 caret-tracking='centered'
 color-saturation=1.0
-contrast-blue=0.0
-contrast-green=0.0
-contrast-red=0.0
+contrast-blue=1.0
+contrast-green=1.0
+contrast-red=1.0
 cross-hairs-clip=false
 cross-hairs-color='#ff0000'
 cross-hairs-length=4096
@@ -10270,6 +10273,41 @@ X-GNOME-Autostart-Delay=4
 NoDisplay=false
 EOF
 chmod -R a+rx nemo-desktop.desktop
+EOF
+gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['glx'"', '"'vmwgfx']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling'"', '"'scale-monitor-framebuffer']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['glx'"', '"'vmwgfx']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['qxl'"', '"'scale-monitor-framebuffer']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['vkms-modifiers']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
+
 EOF
 clear 
 EOF
