@@ -4798,7 +4798,7 @@ window-properties=[618, 373, 640, 232]
 nap-enable=false
 
 [org/blueman/plugins/recentconns]
-recent-connections='eNprYPJmiC1kaCtk1AMAEQ4Cwg=='
+recent-connections=[{'adapter': '00:19:86:00:2D:C5', 'address': '85:93:D4:DD:CD:68', 'alias': 'Ремонт_dconf_самопроизвольное_выключение_одного_блютус_наушника_copyright_griggorii', 'icon': 'audio-card', 'name': 'Профили автоматического подключения', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1584936500.8412452', 'device': '', 'mitem': ''}]
 
 [org/blueman/plugins/powermanager]
 auto-power-on=@mb false
@@ -4886,13 +4886,13 @@ togglekeys-sound-off='/usr/share/cinnamon/sounds/togglekeys-sound-off.ogg'
 togglekeys-sound-on='/usr/share/cinnamon/sounds/togglekeys-sound-on.ogg'
 
 [org/cinnamon/desktop/a11y/magnifier]
-brightness-blue=1.0
-brightness-green=1.0
-brightness-red=1.0
+brightness-blue=0.0
+brightness-green=0.0
+brightness-red=0.0
 color-saturation=1.0
-contrast-blue=1.0
-contrast-green=1.0
-contrast-red=1.0
+contrast-blue=0.0
+contrast-green=0.0
+contrast-red=0.0
 cross-hairs-clip=false
 cross-hairs-color='#ff0000'
 cross-hairs-length=4096
@@ -6120,14 +6120,14 @@ timeout-enable=false
 togglekeys-enable=true
 
 [org/gnome/desktop/a11y/magnifier]
-brightness-blue=1.0
-brightness-green=1.0
-brightness-red=1.0
+brightness-blue=0.0
+brightness-green=0.0
+brightness-red=0.0
 caret-tracking='centered'
 color-saturation=1.0
-contrast-blue=1.0
-contrast-green=1.0
-contrast-red=1.0
+contrast-blue=0.0
+contrast-green=0.0
+contrast-red=0.0
 cross-hairs-clip=false
 cross-hairs-color='#ff0000'
 cross-hairs-length=4096
