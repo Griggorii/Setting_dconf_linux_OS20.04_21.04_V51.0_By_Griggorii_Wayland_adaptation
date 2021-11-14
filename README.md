@@ -49,6 +49,10 @@ gsettings set org.gnome.desktop.interface timeout-expand false
 
 Accelerated-video Enabled Chromium/chrome copy link paste browser enter -> chrome://flags#enable-accelerated-video-decode
 
+Test perfomance history delete run app off/on  true/false
+
+gsettings set org.gnome.desktop.privacy remember-app-usage false
+
 All gnome-shell + 40 variant https://github.com/Griggorii/Setting_dconf_linux_OS20.04_V46.0_By_Griggorii_Wayland_adaptation/releases/tag/gnome-shell-3.38-40.0
 
 horizontal_adaptation not recommended for 3.36-3.38 lag , horizontal for gnome-shell-40
