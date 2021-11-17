@@ -1,7 +1,7 @@
 # Setting_dconf_linux_OS20.04_21.04_V51.0_By_Griggorii_Wayland_adaptation
 dconf , gnome , wayland , X11 , PipeWire and Pulse Audio fix , setting global , qt-dbus , linux , tweak , tweaks , dconf , perfomance
 
-                                       NEW VERSION V52 PROBLEM NEW PIN PAGE 
+                              NEW VERSION V52 PROBLEM NEW PIN MY PAGE GIT 
       https://github.com/Griggorii/Setting_dconf_linux_OS20.04_21.04_V52.0_By_Griggorii_Wayland_adaptation
       
                                                    Old dconf V51
