@@ -25,6 +25,8 @@ $ sudo tar xvpf  desktop-icons@csoriano_21.04.tar.xz -C /
 
 $ sudo apt update && sudo apt install nemo -ygnome-shell-extension-appindicator gnome-shell-extension-autohidetopbar gnome-shell-extension-desktop-icons gnome-shell-extension-impatience gnome-shell-extension-prefs gnome-shell-extension-suspend-button gnome-shell-extension-system-monitor gnome-shell-extension-tilix-dropdown gnome-shell-extension-ubuntu-dock gnome-shell-extensions gnome-terminal gnome-tweak-tool gnome-tweaks gnome-video-effects gnome-weather
 
+$ chmod -R a+rwx Setting_dconf_linux_OS21.04_V51.0_By_Griggorii_Wayland_vertical_adaptation.sh
+
 $ ./Setting_dconf_linux_OS21.04_V51.0_By_Griggorii_Wayland_vertical_adaptation.sh
 
 $ gnome-extensions disable unite@hardpixel.eu
