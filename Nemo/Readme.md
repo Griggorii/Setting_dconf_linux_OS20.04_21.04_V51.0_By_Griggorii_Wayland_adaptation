@@ -13,9 +13,9 @@ $ sudo apt update && sudo apt install nemo -ygnome-shell-extension-appindicator 
 
 $ sudo apt install 
 
-$ chmod -R a+rwx Setting_dconf_linux_OS21.04_V49.0_By_Griggorii_Wayland_vertical_adaptation.sh
+$ chmod -R a+rwx Setting_dconf_linux_OS21.04_V51.0_By_Griggorii_Wayland_vertical_adaptation.sh
 
-$ ./Setting_dconf_linux_OS21.04_V50.0_By_Griggorii_Wayland_vertical_adaptation.sh
+$ ./Setting_dconf_linux_OS21.04_V51.0_By_Griggorii_Wayland_vertical_adaptation.sh
 
 $ gnome-extensions disable unite@hardpixel.eu
 
