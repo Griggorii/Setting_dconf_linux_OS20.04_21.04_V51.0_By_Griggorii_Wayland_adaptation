@@ -11364,6 +11364,7 @@ EOF
 gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 11'
 EOF
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+EOF
 gsettings set org.gnome.desktop.background show-desktop-icons false
 EOF
 gsettings set org.nemo.desktop show-desktop-icons true
